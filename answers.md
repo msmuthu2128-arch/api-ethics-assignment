@@ -7,7 +7,7 @@ Why:
 Full name directly identifies a person. No need for research purposes → safest is complete removal.
 
 ==========================================================================
-3. email
+2. email
 Type: Direct PII
 Action: Drop (or Pseudonymize if tracking needed)
 Why:
@@ -16,7 +16,7 @@ If NOT needed → drop
 If user-level tracking needed → replace with hashed ID
 
 ==========================================================================
-4. date_of_birth
+3. date_of_birth
 Type: Indirect PII (Quasi-identifier)
 Action: Mask / Generalize
 How:
@@ -25,7 +25,7 @@ Why:
 Exact DOB can re-identify users when combined with other fields.
 
 ==========================================================================
-5. zip_code
+4. zip_code
 Type: Indirect PII
 Action: Mask / Generalize
 How:
@@ -35,7 +35,7 @@ Why:
 ZIP + DOB + gender can uniquely identify individuals (known re-identification risk).
 
 ==========================================================================
-6. job_title
+5. job_title
 Type: Indirect PII
 Action: Generalize
 How:
@@ -44,7 +44,7 @@ Why:
 Rare job titles can identify individuals indirectly.
 
 ==========================================================================
-7. diagnosis_notes
+6. diagnosis_notes
 Type: Sensitive Personal Data (Highly sensitive, may contain PII inside text)
 Action: Clean + Pseudonymize
 How:
